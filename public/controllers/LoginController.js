@@ -22,5 +22,13 @@ app.controller('LoginController', ['$scope', function($scope) {
             password: 'shouldgotosleep'
         }
     ],
-    $scope.isLoggedIn = false
+    $scope.loggedIn = false,
+    $scope.loginUser = function (typedUsername, typedPassword) {
+        for (var i = 0; i < users.length; i++) {
+            if (typedUsername === users[i].username && typedPassword === users[i].password) {
+                loggedIn = true
+                console.log(loggedIn)
+            }
+        }
+    }
 }]);
