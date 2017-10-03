@@ -1,0 +1,1 @@
+angular.module('LogInApp').controller('UserController', UserController);
