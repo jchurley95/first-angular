@@ -1,5 +1,5 @@
 app.controller('LoginController', ['$scope', function($scope) {
-    $scope.title = "Log in to your account"
+    $scope.title = "Log in to your account";
     $scope.users = [
         {
             username: 'joeyhurley',

@@ -1,5 +1,15 @@
-<div class="main">
-    <div class="container">
-        <h1>Hello from Login</h1>
-    </div>
+<div class="main" ng-controller=“LoginController”>
+    
+        <h1> Log In </h1>
+        <form ng-submit="login()">
+            <label for='username'>Username: </label>
+            <br/>
+            <input type='text' id='username' ng-model='username'>
+            <br/>
+            <label for='password'>Password: </label>
+            <br/>
+            <input type='text' id='password' ng-model='password'>
+            <br/>
+            <input type='submit' value='Log In'>
+        </form>
 </div>
